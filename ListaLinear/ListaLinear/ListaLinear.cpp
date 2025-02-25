@@ -103,7 +103,32 @@ void inserirElemento()
 }
 
 // deve ser implementada como resposta ao exercicio
+#include<string>
 void buscarElemento()
 {
+	if (nElementos == 0) {
+		cout << "A Lista esta vazia. Não a elementos para buscar. \n";
+		return;
+	}
+	int elemento;
+	cout << "Digite o elemento: ";
+	cin >> elemento;
 
+	int contador = 0;
+	string posicoes = "";
+
+	for (int i = 0; i < nElementos; i++) {
+		if (lista[i] == elemento) {
+			contador++;
+			posicoes += to_string(i) + "";
+		}
+	}
+
+	if (contador > 0) {
+		cout << "O elemento " << elemento << " foi encontrado " << contador << " vez(es). \n";
+		cout << "Foi encontrado nas posicoes: " << posicoes << endl;
+	}
+	else {
+		cout << "O elemento " << elemento << " não foi encontado na lista. \n";
+	}
 }
