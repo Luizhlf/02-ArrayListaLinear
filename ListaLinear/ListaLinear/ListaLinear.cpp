@@ -129,6 +129,6 @@ void buscarElemento()
 		cout << "Foi encontrado nas posicoes: " << posicoes << endl;
 	}
 	else {
-		cout << "O elemento " << elemento << " não foi encontado na lista. \n";
+		cout << "O elemento " << elemento << " nao foi encontado na lista. \n";
 	}
 }
